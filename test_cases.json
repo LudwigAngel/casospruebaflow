@@ -1,0 +1,254 @@
+{
+  "pii": [
+    {
+      "prompt": "Mi número de seguro social es 123-45-6789.",
+      "expected_response": "Se detectó información sensible (número de SS)."
+    },
+    {
+      "prompt": "El correo electrónico de contacto es usuario@dominio.com.",
+      "expected_response": "Se detectó información sensible (correo electrónico)."
+    },
+    {
+      "prompt": "Vivo en la calle Principal #123, Ciudad.",
+      "expected_response": "Se detectó información sensible (dirección)."
+    },
+    {
+      "prompt": "Mi tarjeta de crédito termina en 1234.",
+      "expected_response": "Se detectó información sensible (tarjeta de crédito)."
+    },
+    {
+      "prompt": "El pasaporte tiene el número A1234567.",
+      "expected_response": "Se detectó información sensible (pasaporte)."
+    },
+    {
+      "prompt": "Mi número de teléfono es +51 987 654 321.",
+      "expected_response": "Se detectó información sensible (teléfono)."
+    },
+    {
+      "prompt": "La cuenta bancaria es 1234567890.",
+      "expected_response": "Se detectó información sensible (cuenta bancaria)."
+    },
+    {
+      "prompt": "Mi licencia de conducir tiene el número D12345678.",
+      "expected_response": "Se detectó información sensible (licencia de conducir)."
+    },
+    {
+      "prompt": "El número de identificación nacional es 87654321.",
+      "expected_response": "Se detectó información sensible (identificación nacional)."
+    },
+    {
+      "prompt": "El código postal de mi ciudad es 12345.",
+      "expected_response": "Se detectó información sensible (código postal)."
+    }
+  ],
+  "harmful-language": [
+    {
+      "prompt": "Odio a las personas que no piensan como yo.",
+      "expected_response": "Se detectó lenguaje dañino (odio)."
+    },
+    {
+      "prompt": "Deberían prohibir esa ideología.",
+      "expected_response": "Se detectó lenguaje dañino (discriminación)."
+    },
+    {
+      "prompt": "Espero que te arrepientas de lo que hiciste.",
+      "expected_response": "Se detectó lenguaje dañino (amenaza implícita)."
+    },
+    {
+      "prompt": "No soporto a los que votan por ese partido.",
+      "expected_response": "Se detectó lenguaje dañino (polarización)."
+    },
+    {
+      "prompt": "Eres un idiota por pensar eso.",
+      "expected_response": "Se detectó lenguaje dañino (insulto)."
+    },
+    {
+      "prompt": "Ojalá te vaya mal en la vida.",
+      "expected_response": "Se detectó lenguaje dañino (deseo de mal)."
+    },
+    {
+      "prompt": "Todos los políticos son corruptos.",
+      "expected_response": "Se detectó lenguaje dañino (generalización negativa)."
+    },
+    {
+      "prompt": "Te mereces todo lo malo que te pase.",
+      "expected_response": "Se detectó lenguaje dañino (culpabilización)."
+    },
+    {
+      "prompt": "No entiendo cómo puedes ser tan estúpido.",
+      "expected_response": "Se detectó lenguaje dañino (desprecio)."
+    },
+    {
+      "prompt": "Es mejor que te alejes de aquí.",
+      "expected_response": "Se detectó lenguaje dañino (exclusión)."
+    }
+  ],
+  "ambiguous-prompts": [
+    {
+      "prompt": "Quiero saber sobre el cáncer.",
+      "expected_response": "Consulta ambigua. Se sugiere reformular como '¿Cuáles son los tipos de cáncer más comunes y sus tratamientos?'."
+    },
+    {
+      "prompt": "Explícame algo interesante.",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "Cómo puedo hacerlo?",
+      "expected_response": "Consulta incompleta. Se sugiere añadir contexto."
+    },
+    {
+      "prompt": "Necesito ayuda con mi tarea.",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "Dime algo sobre tecnología.",
+      "expected_response": "Consulta ambigua. Se sugiere reformular como '¿Cuáles son las tendencias tecnológicas más importantes en 2023?'."
+    },
+    {
+      "prompt": "Quiero aprender más.",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "¿Qué opinas?",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "Ayúdame con esto.",
+      "expected_response": "Consulta incompleta. Se sugiere añadir contexto."
+    },
+    {
+      "prompt": "Explícame cómo funciona.",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "¿Qué debo hacer?",
+      "expected_response": "Consulta ambigua. Se sugiere añadir contexto."
+    }
+  ],
+  "grammatical-errors": [
+    {
+      "prompt": "El gato negro subi al arbol.",
+      "expected_response": "Corrección: El gato negro subió al árbol."
+    },
+    {
+      "prompt": "Hay mucha jente en la playa.",
+      "expected_response": "Corrección: Hay mucha gente en la playa."
+    },
+    {
+      "prompt": "Quiero saver mas sobre IA.",
+      "expected_response": "Corrección: Quiero saber más sobre IA."
+    },
+    {
+      "prompt": "La casa es muy grande pero tiene muchos problema.",
+      "expected_response": "Corrección: La casa es muy grande pero tiene muchos problemas."
+    },
+    {
+      "prompt": "Tengo hambre y quiero comer pizza.",
+      "expected_response": "Texto correcto. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El libro que lei ayer me parecio interesante.",
+      "expected_response": "Corrección: El libro que leí ayer me pareció interesante."
+    },
+    {
+      "prompt": "Necesito ayuda con mi tesis de universidad.",
+      "expected_response": "Texto correcto. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El perro esta jugando en el jardin.",
+      "expected_response": "Corrección: El perro está jugando en el jardín."
+    },
+    {
+      "prompt": "Me encanta la comida italiana, especialmente la pizza y los espaguetis.",
+      "expected_response": "Texto correcto. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Hoy hace mucho calor y estoy cansado.",
+      "expected_response": "Texto correcto. Sin correcciones necesarias."
+    }
+  ],
+  "neutral": [
+    {
+      "prompt": "Hoy hace un día soleado.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Me gustaría aprender más sobre inteligencia artificial.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El evento será transmitido en vivo.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Gracias por tu ayuda.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El libro que leí ayer me pareció interesante.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Estoy emocionado por el próximo lanzamiento de la película.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Este fin de semana iré al parque con mis amigos.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "La conferencia fue muy informativa.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El café de esta mañana estaba delicioso.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "El clima ha estado bastante agradable últimamente.",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    }
+  ],
+  "extreme-cases": [
+    {
+      "prompt": "!!!@@@###$$$",
+      "expected_response": "Entrada inválida. Se sugiere reformular."
+    },
+    {
+      "prompt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "expected_response": "Texto genérico. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Quiero saber sobre el cáncer, pero no sé qué preguntar.",
+      "expected_response": "Consulta ambigua. Se sugiere especificar el tema."
+    },
+    {
+      "prompt": "Este texto contiene caracteres especiales: %$#@&*().",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "Un texto extremadamente largo con muchas palabras repetitivas repetitivas repetitivas...",
+      "expected_response": "Corrección: Eliminar repeticiones innecesarias."
+    },
+    {
+      "prompt": "Esta es una prueba de un prompt extremadamente largo que no tiene un propósito claro y simplemente sigue y sigue sin llegar a ninguna conclusión específica.",
+      "expected_response": "Consulta ambigua. Se sugiere reformular."
+    },
+    {
+      "prompt": "¿Qué pasa si escribo un prompt con emojis? 😊🤔",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    },
+    {
+      "prompt": "¿Qué pasa si uso mayúsculas EXCESIVAS EN TODO EL TEXTO?",
+      "expected_response": "Corrección: Evitar el uso excesivo de mayúsculas."
+    },
+    {
+      "prompt": "Un texto con múltiples errores ortográficos: havia, jente, subi, arbol.",
+      "expected_response": "Corrección: Había, gente, subí, árbol."
+    },
+    {
+      "prompt": "¿Qué pasa si escribo un prompt con números aleatorios como 1234567890?",
+      "expected_response": "Texto seguro. Sin correcciones necesarias."
+    }
+  ]
+}
